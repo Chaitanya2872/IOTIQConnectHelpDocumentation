@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Device to Your Room - User Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Previous styles remain the same */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #8a5a2c;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .steps-box {
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .warning {
+            background: #ffdddd;
+            color: #b71c1c;
+            border-left: 6px solid #8a0e0e;
+        }
+
+        .note {
+            background: rgba(195, 156, 103, 0.2);
+            color: #8a5a2c;
+            border-left: 6px solid #c39c67;
+        }
+
+        .tip {
+            background: rgba(1, 50, 32, 0.1);
+            color: #013120;
+            border-left: 6px solid #013120;
+        }
+
+        /* Updated image container styles */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            gap: 20px; /* Space between images */
+        }
+
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%; /* Adjusted width for two images */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            font-size: 16px;
+            color: inherit;
+            width: 20px;
+            text-align: center;
+        }
+
+        .steps-list li {
+            margin-bottom: 12px;
+        }
+
+        .image-caption {
+            text-align: center;
+            color: #666;
+            margin-top: 8px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>How to Add a Device to Your Room</h2>
+        <hr>
+
+        <div class="steps-box">
+            Follow these steps to add a device to your room.
+        </div>
+
+        <ul class="steps-list">
+            <li>Navigate to your <strong>Home Screen</strong>.</li>
+            <li>Click on <strong>Add New Device</strong> on the Home Screen.</li>
+            <li>Select the <strong>Item Type</strong> from the available categories.</li>
+        </ul>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="images/AddNewDeviceInHome.png" alt="Item Type Selection">
+            </div>
+            <div class="image-wrapper">
+                <img src="images/Item Type.PNG" alt="Categories List">
+            </div>
+        </div>
+
+        <ul class="steps-list">
+            <li>Choose the specific <strong>Item</strong> you want to add.</li>
+            <li>Select the desired <strong>Device</strong> from the list.</li>
+        </ul>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="images/SetUpDevice.PNG" alt="Select Item">
+            </div>
+            <div class="image-wrapper">
+                <img src="images/Added.PNG" alt="Select Device">
+            </div>
+        </div>
+
+        <ul class="steps-list">
+            <li>Click on <strong>Setup Device</strong> until the device becomes visible on the network or app interface.</li>
+        </ul>
+        
+        <ul class="steps-list">
+            <li>Once visible, click on <strong>Continue to Home</strong> to complete the process.</li>
+        </ul>
+
+        <div class="image-container">
+            <img src="images/DeviceAddedinHome.PNG" alt="Device Added">
+        </div>
+
+        <div class="info-box warning">
+            <i class="fa-solid fa-triangle-exclamation icon"></i>
+            <span><strong>Warning:</strong> Ensure the device is powered on and within range of the network before proceeding.</span>
+        </div>
+
+        <div class="info-box note">
+            <i class="fa-solid fa-circle-info icon"></i>
+            <span><strong>Note:</strong> The device must be already onboarded and registered in the system.</span>
+        </div>
+
+        <div class="info-box tip">
+            <i class="fa-solid fa-lightbulb icon"></i>
+            <span><strong>Tip:</strong> Verify the device status (online or available for connection) before attempting to add it to your room.</span>
+        </div>
+    </div>
+</body>
+</html>

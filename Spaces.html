@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create a Room - User Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #8a5a2c;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .steps-box {
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .warning {
+            background: #ffdddd;
+            color: #b71c1c;
+            border-left: 6px solid #8a0e0e;
+        }
+
+        .note {
+            background: rgba(195, 156, 103, 0.2);
+            color: #8a5a2c;
+            border-left: 6px solid #c39c67;
+        }
+
+        .tip {
+            background: rgba(136, 228, 195, 0.1);
+            color: #013120;
+            border-left: 6px solid #013120;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            gap: 20px;
+        }
+
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            font-size: 16px;
+            color: inherit;
+            width: 15px;
+            text-align: center;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .info-box > div {
+            flex: 1;
+        }
+
+        .numbered-list {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+
+        .numbered-list li {
+            margin-bottom: 10px;
+        }
+
+        .image-caption {
+            text-align: center;
+            color: #666;
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+        .important-note {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            border-left: 6px solid #8a5a2c;
+        }
+
+        .bullet-list {
+            margin: 10px 0 0 0;
+            padding-left: 25px;
+            list-style-position: outside;
+        }
+
+        .bullet-list li {
+            margin-bottom: 6px;
+            padding-left: 5px;
+            display: list-item;
+        }
+        
+        .bullet-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box .bullet-list {
+            margin-top: 5px;
+            padding-left: 20px;
+            list-style-position:initial;
+        }
+
+        .info-box .bullet-list li {
+            margin-bottom: 4px;
+            padding-left: 3px;
+            text-align: flex;
+            display: list-item;
+            font-family: 12px;
+        }
+
+        .info-box strong {
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+        .alternate-methods {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e6f4fe;
+            border-radius: 8px;
+            border-left: 6px solid #0588f0;
+        }
+
+        .alternate-methods h3 {
+            color:  #0d74ce;
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        .alternate-methods ul {
+            margin: 10px 0 0 0;
+            padding-left: 25px;
+            color:  #0d74ce;
+        }
+
+        .alternate-methods li {
+            margin-bottom: 6px;
+            color:  #0d74ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>How to Setup a Space</h2>
+        <hr>
+
+        <div class="steps-box">
+            Follow these steps to setup a space .
+        </div>
+
+        <ol class="numbered-list">
+            <li>Click <strong>Setup Space</strong></li>
+            <li>Select <strong>Space Type</strong> (e.g., Home, Office, Hostel, Hotel, etc.)</li>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="images/Setup a New Space.png" alt="Add New Room Screen">
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Types of Spaces.PNG" alt="Room Type Selection">
+                </div>
+            </div>
+            <li>Add a <strong>Space Name</strong></li>
+            <li>Click on <strong>Continue</strong></li>
+        </ol>
+        
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="images/Add A Space Name Field.PNG" alt="Add New Room Screen">
+            </div>
+        </div>
+
+        <div class="alternate-methods">
+            <h3>Alternative Methods to Add Spaces</h3>
+            <ul class="bullet-list">
+                <li>You can also add spaces through <strong>My Spaces</strong> Dropdown</li> 
+                <li>You can also add a space by clicking on <strong>Add new Space</strong> in Manage Spaces</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="images/My Spaces Dropdown.PNG" alt="Add New Room Screen">
+            </div>
+            <div class="image-wrapper">
+                <img src="images/Manage Spaces Screen.PNG" alt="Room Type Selection">
+            </div>
+        </div>
+
+        <div class="info-box note">
+            <i class="fa-solid fa-circle-info icon"></i>
+            <div>
+                <strong style="font-size: 16.38px;">Note:</strong>
+                <ul class="bullet-list">
+                    <li>Creation of Space allows you to Add Rooms and control devices</li>
+                    <li>Each space can have its own unique name and type</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-box tip">
+            <i class="fa-solid fa-lightbulb icon"></i>
+            <div>
+                <strong style="font-size: 16.38px;">Tip:</strong>
+                <ul class="bullet-list">
+                    <li>Use descriptive space names for easy identification</li>
+                    <li>Select the appropriate Space type to access relevant device templates</li>
+                    <li>You can change your spaces from My Spaces Dropdown in Home Screen</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

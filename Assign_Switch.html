@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Assign a Switch - User Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #8a5a2c;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .steps-box {
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .warning {
+            background: #ffdddd;
+            color: #b71c1c;
+            border-left: 6px solid #8a0e0e;
+        }
+
+        .note {
+            background: rgba(195, 156, 103, 0.2);
+            color: #8a5a2c;
+            border-left: 6px solid #c39c67;
+        }
+
+        .tip {
+            background: rgba(1, 50, 32, 0.1);
+            color: #013120;
+            border-left: 6px solid #013120;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            gap: 20px;
+        }
+
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            font-size: 16px;
+            color: inherit;
+            width: 15px;
+            text-align: center;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .info-box > div {
+            flex: 1;
+        }
+
+        .numbered-list {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+
+        .numbered-list li {
+            margin-bottom: 10px;
+        }
+
+        .image-caption {
+            text-align: center;
+            color: #666;
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+        .important-note {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            border-left: 6px solid #8a5a2c;
+        }
+
+        .bullet-list {
+            margin: 10px 0 0 0;
+            padding-left: 25px;
+            list-style-position: outside;
+        }
+
+        .bullet-list li {
+            margin-bottom: 6px;
+            padding-left: 5px;
+            display: list-item;
+        }
+        
+        .bullet-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box .bullet-list {
+            margin-top: 5px;
+            padding-left: 20px;
+            list-style-position:initial;
+        }
+
+        .info-box .bullet-list li {
+            margin-bottom: 4px;
+            padding-left: 3px;
+            text-align: flex;
+            display: list-item;
+            font-family: 12px;
+        }
+
+        .info-box strong {
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+        .code-display {
+            background: #f1f1f1;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin: 10px 0;
+            border: 1px dashed #ccc;
+        }
+
+        .benefits-box {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f5ff;
+            border-radius: 8px;
+            border-left: 6px solid #3a5db8;
+        }
+
+        .benefits-box h3 {
+            color: #3a5db8;
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        .benefits-box ul {
+            margin: 10px 0 0 0;
+            padding-left: 25px;
+        }
+
+        .benefits-box li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>How to Assign a Switch</h2>
+        <hr>
+
+        <div class="steps-box">
+            Follow these steps to assign switches to your devices.
+        </div>
+
+        <ol class="numbered-list">
+            <li>After Adding a Device in room, click on <strong>Assign Switches</strong></li>
+            <li>Click on <strong>Assign New Device</strong></li>
+            <li>Enter a <strong>Name</strong> for your Switch</li>
+            <li>Select an appliance from <strong>Dropdown</strong>, such as fan, light, Dimmer, AC, Curtain, etc.</li>
+            <li>Click on <strong>Assign and Continue</strong></li>
+            <li>After assigning, all Switches will be added in Home Screen</li>
+        </ol>
+        
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="images/AssignSwitches_btn.PNG" alt="Assign New Device Screen">
+                
+            </div>
+            <div class="image-wrapper">
+                <img src="images/AssignSwitc_Screen.PNG" alt="Home Screen with Assigned Switches">
+                
+            </div>
+        </div>
+
+        <div class="info-box note">
+            <i class="fa-solid fa-circle-info icon"></i>
+            <div>
+                <strong style="font-size: 16.38px;">Note:</strong>
+                <ul class="bullet-list">
+                    <li>User has the flexibility to assign only a few switches by selecting <strong>None</strong> from the appliance dropdown</li>
+                    <li>Once a switch is assigned, you can operate it by toggling on and off</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="benefits-box">
+            <h3>Benefits of Assigned Switches</h3>
+            <ul class="bullet-list">
+                <li>Group all the switches together</li>
+                <li>Create Scenes for different settings</li>
+                <li>View usage reports for better energy management</li>
+            </ul>
+        </div>
+
+        <div class="info-box tip">
+            <i class="fa-solid fa-lightbulb icon"></i>
+            <div>
+                <strong style="font-size: 16.38px;">Tip:</strong>
+                <ul class="bullet-list">
+                    <li>Create meaningful names for your switches to easily identify them</li>
+                    <li>Group similar switches together for easier management</li>
+                    <li>Use Scenes for common activities like "Movie Night" or "Reading" for quick adjustments</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
