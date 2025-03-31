@@ -4,7 +4,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Removing a Device - User Guide</title>
+    <title>How to Create a Room - User Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -15,7 +15,7 @@
             background-color: #fff;
             color: #333;
             font-size: 14px;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         .container {
@@ -32,7 +32,7 @@
 
         p {
             font-size: 14px;
-            line-height: 1.6;
+            line-height: 1.4;
         }
 
         .steps-box {
@@ -44,7 +44,7 @@
 
         .info-box {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 10px;
             padding: 10px;
             border-radius: 8px;
@@ -66,7 +66,7 @@
         }
 
         .tip {
-            background: rgba(1, 50, 32, 0.1);
+            background: rgba(136, 228, 195, 0.1);
             color: #013120;
             border-left: 6px solid #013120;
         }
@@ -100,12 +100,23 @@
         .icon {
             font-size: 16px;
             color: inherit;
-            width: 20px;
+            width: 15px;
             text-align: center;
+            margin-top: 3px;
+            flex-shrink: 0;
         }
 
-        .steps-list li {
-            margin-bottom: 12px;
+        .info-box > div {
+            flex: 1;
+        }
+
+        .numbered-list {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+
+        .numbered-list li {
+            margin-bottom: 10px;
         }
 
         .image-caption {
@@ -126,41 +137,109 @@
         .bullet-list {
             margin: 10px 0 0 0;
             padding-left: 25px;
+            list-style-position: outside;
         }
 
         .bullet-list li {
+            margin-bottom: 6px;
+            padding-left: 5px;
+            display: list-item;
+        }
+        
+        .bullet-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box .bullet-list {
+            margin-top: 5px;
+            padding-left: 20px;
+            list-style-position:initial;
+        }
+
+        .info-box .bullet-list li {
+            margin-bottom: 4px;
+            padding-left: 3px;
+            text-align: flex;
+            display: list-item;
+            font-family: 12px;
+        }
+
+        .info-box strong {
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+        .alternate-methods {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e6f4fe;
+            border-radius: 8px;
+            border-left: 6px solid #0588f0;
+        }
+
+        .alternate-methods h3 {
+            color:  #0d74ce;
+            margin-top: 0;
+            font-size: 15px;
+        }
+
+        .alternate-methods ul {
+            margin: 10px 0 0 0;
+            padding-left: 25px;
+            color:  #0d74ce;
+        }
+
+        .alternate-methods li {
+            margin-bottom: 6px;
+            color:  #0d74ce;
+        }
+
+        .important-note {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            border-left: 6px solid #8a5a2c;
+        }
+
+        .important-note.bullet-list {
+            margin: 10px 0 0 0;
+            padding-left: 25px;
+        }
+
+        important-note.bullet-list li {
             margin-bottom: 8px;
             padding-left: 5px;
         }
         
-        .bullet-list li:last-child {
+        .important-note.bullet-list li:last-child {
             margin-bottom: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>How to Remove a Device</h2>
+        <h2>Remove Device</h2>
         <hr>
 
         <div class="steps-box">
-            Follow these steps to remove a device from a room in your space.
+            Follow these steps to Remove Device
         </div>
 
-        <ul class="steps-list">
-            <li>Click on <strong>Remove or Move Device</strong></li>
-            <li>Select the device(s) you want to remove in that room</li>
-        </ul>
-        <div class="image-container">
-            <div class="image-wrapper">
-                <img src="images/Remove or Move Device.png" alt="Remove or Move Device Button">
+        <ol class="numbered-list">
+            <li>Click <strong>Remove or Move Device</strong></li>
+            <li>Select Desired Devices you want to remove</li>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="images/Remove or Move Device.png" alt="Add New Room Screen">
+                </div>
             </div>
-        </div>
-
-        <ul class="steps-list">
             <li>Click on <strong>Remove Devices</strong></li>
-            <li>Click on <strong>Yes, Remove</strong> to confirm the removal</li>
-        </ul>
+            <li>Confirm Removal by clicking on <strong>Yes, Remove</strong></li>
+            <li>Selected Devices will be deleted from the Space</li>
+        </ol>
+        
+        
 
         <div class="important-note">
             <h3 style="color: #8a5a2c; margin-top: 0;">What Happens When You Remove a Device</h3>
@@ -173,8 +252,14 @@
         </div>
 
         <div class="info-box tip">
-            <i class="fa-solid fa-lightbulb icon"></i>
-            <span><strong>Tip:</strong> If you plan to move a device to another space, first remove it from the current space, then add it to the new space as a new device.</span>
+            
+            <div>
+                <span><i class="fa-solid fa-lightbulb icon"></i>
+                <strong style="font-size: 16.38px;">Tip</strong></span>
+                <ul class="bullet-list">
+                    <li>If you plan to move a device to another space, first remove it from the current space, then add it to the new space as a new device</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
